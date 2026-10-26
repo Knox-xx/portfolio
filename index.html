@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Knox — Video Editor & Motion Designer. After Effects, DaVinci Resolve, kinetic typography and high-retention short-form edits." />
+  <title>Knox — Video Editor & Motion Designer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Cursor spotlight overlay -->
+  <div id="spotlight" aria-hidden="true"></div>
+
+  <!-- Film grain overlay (via CSS body::after) -->
+
+  <!-- Scroll progress bar -->
+  <div id="progress" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <header>
+    <a href="#" class="logo">
+      <span class="logo-k">K</span><span class="logo-nox">NOX</span>
+    </a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn nav-cta">Book a Project</a>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero canvas-section" id="home">
+    <!-- Radial glow -->
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <!-- Floating deco cubes -->
+    <div class="deco-cube deco-cube--1" aria-hidden="true">
+      <div class="cube-face cube-front"></div>
+      <div class="cube-face cube-back"></div>
+      <div class="cube-face cube-left"></div>
+      <div class="cube-face cube-right"></div>
+      <div class="cube-face cube-top"></div>
+      <div class="cube-face cube-bottom"></div>
+    </div>
+    <div class="deco-cube deco-cube--2" aria-hidden="true">
+      <div class="cube-face cube-front"></div>
+      <div class="cube-face cube-back"></div>
+      <div class="cube-face cube-left"></div>
+      <div class="cube-face cube-right"></div>
+      <div class="cube-face cube-top"></div>
+      <div class="cube-face cube-bottom"></div>
+    </div>
+
+    <div class="w hero-grid">
+      <!-- Left: Headline + CTA -->
+      <div class="hero-copy">
+        <!-- Availability badge -->
+        <div class="badge-available rv">
+          <span class="badge-dot"></span>
+          <span>Available for Projects</span>
+        </div>
+
+        <h1>
+          <span><em>Knox</em></span>
+          <span><em>Motion</em></span>
+          <span class="h1-brand"><em>Designer</em></span>
+        </h1>
+
+        <p class="hero-desc rv">
+          Video Editor & Motion Designer specializing in <em>After Effects</em>,
+          <em>DaVinci Resolve</em>, and <em>Photoshop</em> workflows.
+          1+ year delivering high-impact short-form retention edits,
+          kinetic typography, and motion graphics.
+        </p>
+
+        <div class="hero-actions rv">
+          <a href="#contact" class="btn btn--hero">Book a Project</a>
+          <a href="#work" class="btn btn--ghost-small">View Showreel ↓</a>
+        </div>
+
+        <!-- Stats row -->
+        <div class="hero-stats stg">
+          <div class="stat">
+            <span class="stat-num">1+</span>
+            <span class="stat-label label-canvas">Years Exp.</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num">50+</span>
+            <span class="stat-label label-canvas">Projects</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label label-canvas">Core Tools</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Hero Card / Voucher Badge -->
+      <div class="hero-card-wrap rv">
+        <div class="hero-voucher tilt">
+          <!-- Card Header -->
+          <div class="voucher-header">
+            <span class="label-card">Motion Designer</span>
+            <span class="voucher-id mono">#KNOX-2025</span>
+          </div>
+
+          <!-- Avatar -->
+          <div class="voucher-avatar">
+            <img
+              src="./assets/images/hero-avatar.png"
+              alt="Knox — Video Editor & Motion Designer"
+              width="180"
+              height="180"
+              loading="eager"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <!-- Fallback placeholder avatar -->
+            <div class="avatar-fallback" style="display:none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" aria-hidden="true">
+                <circle cx="40" cy="30" r="22" fill="rgba(184,44,56,0.15)" stroke="#B82C38" stroke-width="2"/>
+                <circle cx="40" cy="30" r="12" fill="#B82C38"/>
+                <ellipse cx="40" cy="72" rx="28" ry="16" fill="rgba(184,44,56,0.10)" stroke="#B82C38" stroke-width="1.5"/>
+              </svg>
+              <span class="avatar-initial">K</span>
+            </div>
+          </div>
+
+          <!-- Voucher Name -->
+          <div class="voucher-name">
+            <h3>Knox</h3>
+            <span class="label-card">After Effects · DaVinci · Photoshop</span>
+          </div>
+
+          <!-- Ticket seam -->
+          <div class="ticket-seam" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" viewBox="0 0 300 20" preserveAspectRatio="none">
+              <circle cx="0" cy="10" r="10" fill="#7EAEF5"/>
+              <circle cx="300" cy="10" r="10" fill="#7EAEF5"/>
+              <line x1="16" y1="10" x2="284" y2="10" stroke="#B82C38" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round" opacity="0.40"/>
+            </svg>
+          </div>
+
+          <!-- Voucher Footer -->
+          <div class="voucher-footer">
+            <div>
+              <span class="label-card">Speciality</span>
+              <p class="voucher-spec">Short-Form · Kinetic Typography · Motion GFX</p>
+            </div>
+            <div class="card-barcode" aria-hidden="true"></div>
+          </div>
+
+          <!-- Glassmorphism chip -->
+          <div class="chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <circle cx="6" cy="6" r="4" fill="#B82C38"/>
+              <circle cx="6" cy="6" r="2" fill="#fff"/>
+            </svg>
+            <span>Open to Work</span>
+          </div>
+        </div>
+
+        <!-- Floating deco stars -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" aria-hidden="true" class="deco-star deco-star--hero-1">
+          <path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="rgba(255,255,255,0.40)"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="deco-star deco-star--hero-2">
+          <path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="rgba(184,44,56,0.50)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MARQUEE TICKER
+  ═══════════════════════════════════════════ -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- Items duplicated in JS for seamless loop -->
+      <span class="marquee-item">After Effects
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" class="marquee-sep"><rect x="1" y="1" width="8" height="8" fill="rgba(255,255,255,0.60)" transform="rotate(45 5 5)"/></svg>
+      </span>
+      <span class="marquee-item">DaVinci Resolve
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" class="marquee-sep"><rect x="1" y="1" width="8" height="8" fill="rgba(255,255,255,0.60)" transform="rotate(45 5 5)"/></svg>
+      </span>
+      <span class="marquee-item">Motion Graphics
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" class="marquee-sep"><rect x="1" y="1" width="8" height="8" fill="rgba(255,255,255,0.60)" transform="rotate(45 5 5)"/></svg>
+      </span>
+      <span class="marquee-item">Kinetic Typography
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" class="marquee-sep"><rect x="1" y="1" width="8" height="8" fill="rgba(255,255,255,0.60)" transform="rotate(45 5 5)"/></svg>
+      </span>
+      <span class="marquee-item">Short-Form Edits
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" class="marquee-sep"><rect x="1" y="1" width="8" height="8" fill="rgba(255,255,255,0.60)" transform="rotate(45 5 5)"/></svg>
+      </span>
+      <span class="marquee-item">Photoshop
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" class="marquee-sep"><rect x="1" y="1" width="8" height="8" fill="rgba(255,255,255,0.60)" transform="rotate(45 5 5)"/></svg>
+      </span>
+      <span class="marquee-item">High Retention
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" class="marquee-sep"><rect x="1" y="1" width="8" height="8" fill="rgba(255,255,255,0.60)" transform="rotate(45 5 5)"/></svg>
+      </span>
+      <span class="marquee-item">Color Grading
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" class="marquee-sep"><rect x="1" y="1" width="8" height="8" fill="rgba(255,255,255,0.60)" transform="rotate(45 5 5)"/></svg>
+      </span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       WORK / SHOWREEL SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="work" class="canvas-section">
+    <div class="w">
+      <!-- Section header -->
+      <div class="section-head rv">
+        <span class="section-badge">My Work</span>
+        <h2>Featured <em>Showreels</em></h2>
+        <p class="section-sub">A curated selection of high-impact edits, motion graphics, and short-form content.</p>
+      </div>
+
+      <!-- Video grid -->
+      <div class="grid-videos stg">
+
+        <!-- Video 1 -->
+        <article class="video-card card tilt rv">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/meIHyNOSdIs"
+              title="Showreel 01 — Kinetic Edit"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-meta">
+            <span class="label-card">01 / Showreel</span>
+            <h3>Kinetic Edit</h3>
+            <div class="tech-badges">
+              <span class="tech-badge">After Effects</span>
+              <span class="tech-badge">Premiere</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video 2 -->
+        <article class="video-card card tilt rv">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/w_4kvPcb0OY?si=-YHI68XIrV3aCLl9"
+              title="Showreel 02 — Motion Graphics"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-meta">
+            <span class="label-card">02 / Showreel</span>
+            <h3>Motion Graphics</h3>
+            <div class="tech-badges">
+              <span class="tech-badge">After Effects</span>
+              <span class="tech-badge tech-badge--davinci">DaVinci</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video 3 -->
+        <article class="video-card card tilt rv">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/3kO50_tfoWs?si=2tlQ1IQNo5uPrq_s"
+              title="Showreel 03 — Typography Reel"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-meta">
+            <span class="label-card">03 / Showreel</span>
+            <h3>Typography Reel</h3>
+            <div class="tech-badges">
+              <span class="tech-badge">After Effects</span>
+              <span class="tech-badge">Photoshop</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video 4 -->
+        <article class="video-card card tilt rv">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/S3qnQOqS0cc?si=YUF8b8i7jq9yozYU"
+              title="Showreel 04 — Short-Form Retention"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-meta">
+            <span class="label-card">04 / Showreel</span>
+            <h3>Short-Form Retention</h3>
+            <div class="tech-badges">
+              <span class="tech-badge tech-badge--davinci">DaVinci</span>
+              <span class="tech-badge">Premiere</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Video 5 -->
+        <article class="video-card card tilt rv">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/qQQ7_Ss7ld4?si=Fv8F5hzxH7aK-i35"
+              title="Showreel 05 — Color Grade & VFX"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-meta">
+            <span class="label-card">05 / Showreel</span>
+            <h3>Color Grade & VFX</h3>
+            <div class="tech-badges">
+              <span class="tech-badge tech-badge--davinci">DaVinci</span>
+              <span class="tech-badge">After Effects</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES / PACKAGES SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="services" class="canvas-section">
+    <div class="w">
+      <!-- Section header -->
+      <div class="section-head rv">
+        <span class="section-badge">Our packages</span>
+        <h2>Services &amp; <em>Pricing</em></h2>
+        <p class="section-sub">Transparent packages built for creators, brands, and agencies who want results.</p>
+      </div>
+
+      <!-- 3-col pricing grid -->
+      <div class="grid-pricing stg">
+
+        <!-- ESSENTIALS -->
+        <div class="pricing-card card tilt rv">
+          <span class="label-card pkg-label">Essentials</span>
+          <h3>Quick Cuts</h3>
+          <ul class="pkg-list">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              Up to <em>2-minute</em> short-form video
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              <em>Subtitles</em> & captions
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              Basic <em>color correction</em>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              1 revision round
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              3-day <em>delivery</em>
+            </li>
+          </ul>
+
+          <!-- Ticket seam -->
+          <div class="ticket-seam" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" viewBox="0 0 300 20" preserveAspectRatio="none">
+              <circle cx="0" cy="10" r="10" fill="#7EAEF5"/>
+              <circle cx="300" cy="10" r="10" fill="#7EAEF5"/>
+              <line x1="16" y1="10" x2="284" y2="10" stroke="#B82C38" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round" opacity="0.40"/>
+            </svg>
+          </div>
+
+          <div class="pkg-footer">
+            <div class="pkg-price-row">
+              <span class="label-card">Price Starts At:</span>
+              <span class="price">$30 <span class="price-unit">/video</span></span>
+            </div>
+            <div class="card-barcode" aria-hidden="true"></div>
+            <span class="mono pkg-tagline">KNOX · ESSENTIALS · EDIT-001</span>
+          </div>
+
+          <a href="#contact" class="btn btn-primary pkg-cta">Get Started</a>
+        </div>
+
+        <!-- GROWTH (Featured) -->
+        <div class="pricing-card card card-featured tilt rv">
+          <span class="label-card pkg-label">Growth — Most Popular</span>
+          <h3>Dynamic Edit</h3>
+          <ul class="pkg-list">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              Up to <em>10-minute</em> video
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              <em>Kinetic typography</em> & motion graphics
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              <em>DaVinci</em> professional color grade
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              Custom <em>sound design</em> & SFX
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              3 revision rounds
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              5-day <em>delivery</em>
+            </li>
+          </ul>
+
+          <!-- Ticket seam -->
+          <div class="ticket-seam" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" viewBox="0 0 300 20" preserveAspectRatio="none">
+              <circle cx="0" cy="10" r="10" fill="#7EAEF5"/>
+              <circle cx="300" cy="10" r="10" fill="#7EAEF5"/>
+              <line x1="16" y1="10" x2="284" y2="10" stroke="#B82C38" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round" opacity="0.40"/>
+            </svg>
+          </div>
+
+          <div class="pkg-footer">
+            <div class="pkg-price-row">
+              <span class="label-card">Price Starts At:</span>
+              <span class="price text-glow">$80 <span class="price-unit">/video</span></span>
+            </div>
+            <div class="card-barcode" aria-hidden="true"></div>
+            <span class="mono pkg-tagline">KNOX · GROWTH · EDIT-002</span>
+          </div>
+
+          <a href="#contact" class="btn btn-primary pkg-cta">Book Now</a>
+        </div>
+
+        <!-- ENTERPRISE -->
+        <div class="pricing-card card tilt rv">
+          <span class="label-card pkg-label">Enterprise</span>
+          <h3>Full Production</h3>
+          <ul class="pkg-list">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              <em>Unlimited</em> video length
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              Full <em>After Effects</em> VFX compositing
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              Photoshop <em>asset design</em> & branding
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              <em>Dedicated</em> priority slot
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              <em>Unlimited</em> revisions
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" class="pkg-bullet"><path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="#B82C38"/></svg>
+              Custom <em>timeline</em>
+            </li>
+          </ul>
+
+          <!-- Ticket seam -->
+          <div class="ticket-seam" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20" viewBox="0 0 300 20" preserveAspectRatio="none">
+              <circle cx="0" cy="10" r="10" fill="#7EAEF5"/>
+              <circle cx="300" cy="10" r="10" fill="#7EAEF5"/>
+              <line x1="16" y1="10" x2="284" y2="10" stroke="#B82C38" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round" opacity="0.40"/>
+            </svg>
+          </div>
+
+          <div class="pkg-footer">
+            <div class="pkg-price-row">
+              <span class="label-card">Price Starts At:</span>
+              <span class="price">$200 <span class="price-unit">/project</span></span>
+            </div>
+            <div class="card-barcode" aria-hidden="true"></div>
+            <span class="mono pkg-tagline">KNOX · ENTERPRISE · EDIT-003</span>
+          </div>
+
+          <a href="#contact" class="btn btn-primary pkg-cta">Let's Talk</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="canvas-section contact-section">
+    <div class="w">
+      <div class="section-head rv">
+        <span class="section-badge">Get in Touch</span>
+        <h2>Let's Build <em>Something</em></h2>
+        <p class="section-sub">Ready to level up your content? Drop me a message and let's make it happen.</p>
+      </div>
+
+      <div class="contact-grid stg">
+
+        <!-- Email card -->
+        <div class="contact-card card tilt rv">
+          <div class="contact-icon-box icon-box">
+            <!-- Email SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B82C38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </div>
+          <span class="label-card">Email</span>
+          <h3>knox8303@gmail.com</h3>
+          <p>Send a direct message — I respond within 24 hours.</p>
+          <div class="contact-actions">
+            <a href="mailto:knox8303@gmail.com" class="btn btn-primary">Send Email</a>
+            <button class="btn btn-copy" data-copy="knox8303@gmail.com" aria-label="Copy email to clipboard">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+              </svg>
+              Copy
+            </button>
+          </div>
+        </div>
+
+        <!-- Discord card -->
+        <div class="contact-card card tilt rv">
+          <div class="contact-icon-box icon-box">
+            <!-- Discord SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#B82C38" aria-hidden="true">
+              <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.311-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.311-.946 2.38-2.157 2.38z"/>
+            </svg>
+          </div>
+          <span class="label-card">Discord</span>
+          <h3>knoxx_69</h3>
+          <p>Ping me on Discord for quick chats, briefs, and project kickoffs.</p>
+          <div class="contact-actions">
+            <button class="btn btn-primary btn-copy" data-copy="knoxx_69">
+              Copy Handle
+            </button>
+          </div>
+        </div>
+
+        <!-- CTA card -->
+        <div class="contact-card contact-cta-card card rv">
+          <div class="cta-star-wrap" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M10 0 L11.8 7.6 L19.5 5.9 L14.1 11.2 L19.5 14.1 L11.8 12.4 L10 20 L8.2 12.4 L0.5 14.1 L5.9 11.2 L0.5 5.9 L8.2 7.6 Z" fill="rgba(184,44,56,0.15)"/>
+            </svg>
+          </div>
+          <span class="label-card">Ready to Start?</span>
+          <h3>Ideas Are Not Recyclable</h3>
+          <p>Every frame matters. Let's craft content that <em>converts</em> and <em>captivates</em>.</p>
+          <!-- Editorial arrow -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none" aria-hidden="true" class="deco-arrow">
+            <path d="M2 6 C12 4, 36 4, 44 16 C48 22, 42 28, 36 28" stroke="#B82C38" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M32 24 L36 28 L40 24" stroke="#B82C38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <a href="mailto:knox8303@gmail.com" class="btn btn-primary">Start a Project</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TOAST NOTIFICATION
+  ═══════════════════════════════════════════ -->
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+    <span id="toast-msg">Copied!</span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="w footer-inner">
+      <div class="footer-logo">
+        <span class="logo-k">K</span><span class="logo-nox">NOX</span>
+      </div>
+      <p class="footer-tagline label-canvas">Video Editor & Motion Designer — 2025</p>
+      <div class="footer-links">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="mailto:knox8303@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
